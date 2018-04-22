@@ -1,0 +1,102 @@
+.m-t-b-60{ margin: 60px 0; }
+.bg-ff0166{ background: #ff0166; }
+.bg-f60{ background: #f60; }
+.bg-c87137{ background: #c87137; }
+.bg-ffcc01{ background: #ffcc01; }
+.bg-00aa00{ background: #00aa00; }
+.bg-0cf{ background: #0cf; }
+
+.border-ff0166{ border:1px solid #ff0166; }
+.border-f60{ border:1px solid #f60; }
+.border-c87137{ border:1px solid #c87137; }
+.border-ffcc01{ border:1px solid #ffcc01; }
+.border-00aa00{ border:1px solid #00aa00; }
+.border-0cf{ border:1px solid #0cf; }
+
+.career-all{}
+.career-all .career-detail{
+	padding: 10px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.career-all .career-detail .cd-price{
+	margin-bottom: 80px;
+}
+.career-all .career-detail .cd-price p{
+	color: #fff
+}
+.career-all .career-detail .cd-text{}
+.career-all .career-detail .cd-text p{
+	color: #fff
+}
+.career-all .career-detail .cd-text label{
+	color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.cd-active{
+	background: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.cd-active label{
+	margin-bottom: 0;
+}
+
+.career-all .career-detail:hover .cd-active{
+	display: block;
+}
+.faq-all .fd-title{
+    padding-left: 15px;
+    margin: 40px 0;
+    display: inline-block;
+    width: 100%;
+}
+.faq-all .faq-detail{
+	margin-bottom: 40px;
+}
+.faq-search{
+    position: relative; 
+    width: 750px;
+    margin: 45px auto;
+}
+.faq-search form{}
+.faq-search form input{
+    padding: 25px 15px 25px 50px;
+
+}
+.faq-search form i{
+	position: absolute;
+    top: 9px;
+    left: 12px;
+    font-size: 35px;
+    color: #dcdcdc;
+}
+
+.changeColorAward {
+/*	transition: 1s;
+	-webkit-transition: 1s;
+	-moz-transition: 1s*/
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.changeColorAward:hover {
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  /*transform: scale(1.5);*/
+}
+
+
+
