@@ -1,0 +1,171 @@
+.header-top {
+  background: #ececec;
+  width: 100%;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.header-top * {
+  color: #9b9b9b;
+}
+
+footer a {
+  color: #000;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  li.nav-item {
+    border-left: 1px solid #ececec;
+    position: relative;
+  }
+
+  li.nav-item:last-child {
+    border-right: 1px solid #ececec;
+    position: relative;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 20px 20px !important;
+  }
+  
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #f9a93d;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .nav-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+}
+
+.staff-photo {
+  position: relative;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: white;
+  overflow: auto;
+  padding: 10%;
+  text-align: center;
+  /* text-overflow: ellipsis; */
+  background: linear-gradient(
+    transparent, transparent, rgba(33, 37, 41, .8) 50%, rgba(33, 37, 41, .8)
+  );
+  background-size: 100% 202%;
+  /* transform: translate(-3px, -3px); */
+  /* -webkit-transform: translateY(100%);
+  transform: translateY(100%); */
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  z-index: 99999;
+}
+
+.description:hover {
+  opacity: 1;
+  background-position: 100% 100%;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+
+.absolute-center {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* adds some margin below the link sets  */
+/* .navbar .dropdown-menu div[class*="col"] {
+  margin-bottom:1rem;
+} */
+
+.navbar .dropdown-menu {
+ border:none;
+ color: black;
+ /* background-color:#0060c8!important; */
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+ 
+ /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+ padding-top:0px;
+ padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+/* .navbar .nav-item {
+ padding:.5rem .5rem;
+ margin:0 .25rem;
+} */
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+ width:100%;
+ left:0;
+ right:0;
+ transform: translateY(-3px);
+}
+ 
+ /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+ display:block!important;
+}
+ 
+ .navbar .dropdown-menu {
+   border: 1px solid rgba(0,0,0,.15);
+   background-color: #fff;
+ }
+
+}
+
+.nav a {
+  color: black;
+}
+
+.explanation {
+  color: gray;
+}
+
+.menu-header {
+  white-space: nowrap;
+}
+
+.menu-header ~ .line {
+  background: #000;
+  width: 100%;
+  height: 5px;
+  margin-left: 5px;
+}
+
+.menu-subject-image {
+  height: 30px;
+  width: 45px;
+}
